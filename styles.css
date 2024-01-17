@@ -1,0 +1,586 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+@import url("https://fonts.googleapis.com/css?family=Barlow+Condensed:300,400");
+@font-face {
+  font-family: "SF Pro-Medium";
+  src: url("SF-Pro-Text-Medium.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "SF Pro-Regular";
+  src: url("SF-Pro-Text-Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "SF Pro-Semibold";
+  src: url("SF-Pro-Text-Semibold.otf") format("opentype");
+}
+
+.bg {
+    background-color: #202020;
+    overflow: hidden;
+    width: 1728px;
+    height: 2310px;
+    position: relative;
+  }
+
+.header {
+    position: absolute;
+    width: 1728px;
+    height: 670px;
+    top: 88px;
+    left: 0;
+  }
+
+/* nav bar */
+  .nav {
+    position: relative;
+    width: 1728px;
+    height: 94px;
+    background-color: #1f1f1f;
+    box-shadow: 0px 4px 4px #00000040;
+  }
+  
+  .contact {
+    position: absolute;
+    width: 153px;
+    height: 58px;
+    top: 39px;
+    left: 671px;
+  }
+  
+  .contact-text {
+    width: 93px;
+    top: 0;
+    left: 2px;
+    color: #ffffff;
+    font-size: 20px;
+    position: absolute;
+    font-family: "SF Pro-Regular", Helvetica;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .search {
+    position: absolute;
+    width: 324px;
+    height: 44px;
+    top: 22px;
+    left: 1373px;
+    background-color: #e0e0e0;
+    border-radius: 22px;
+  }
+  
+  .search-text {
+    position: absolute;
+    width: 156px;
+    top: 10px;
+    left: 22px;
+    font-family: "SF Pro-Regular", Helvetica;
+    font-weight: 400;
+    color: #535353;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .search-icon {
+    position: absolute;
+    width: 35px;
+    height: 44px;
+    top: 0;
+    left: 271px;
+    object-fit: cover;
+  }
+  
+  .logo {
+    position: absolute;
+    width: 120px;
+    height: 92px;
+    top: 1px;
+    left: 22px;
+  }
+  
+  .artists-nav-bar {
+    position: absolute;
+    width: 120px;
+    height: 58px;
+    top: 39px;
+    left: 183px;
+  }
+  
+  .artist-text {
+    position: absolute;
+    top: 0;
+    left: 2px;
+    font-family: "SF Pro-Regular", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .events-nav-bar {
+    position: absolute;
+    width: 124px;
+    height: 58px;
+    top: 39px;
+    left: 340px;
+  }
+  
+  .events-text {
+    position: absolute;
+    width: 64px;
+    top: 0;
+    left: 2px;
+    font-family: "SF Pro-Regular", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .about-us-nav-bar {
+    position: absolute;
+    width: 175px;
+    height: 58px;
+    top: 39px;
+    left: 495px;
+  }
+  
+  .about-us {
+    position: absolute;
+    width: 125px;
+    top: 0;
+    left: 2px;
+    font-family: "SF Pro-Regular", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  /* nav hover effect */
+  .contact-text::after,
+  .artist-text::after,
+  .events-text::after,
+  .about-us::after,
+  .footer-text::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -1.2px;
+    width: 0;
+    height: 1.7px;
+    background-color: #ffffff;
+    border-radius: 2px;
+    transition: width 0.3s ease-out;
+  }
+  
+  .contact-text:hover::after,
+  .artist-text:hover::after,
+  .events-text:hover::after,
+  .about-us:hover::after,
+  .footer-text:hover::after {
+    width: 100%;
+  }
+  
+  .about-us:hover::after {
+    width: 70%;
+  }
+  
+  .contact-text:hover::after {
+    width: 80%;
+  }
+
+/* artist section */
+.artists {
+  position: absolute;
+  width: 1728px;
+  height: 504px;
+  top: 758px;
+  left: 0;
+} 
+
+.our-artists {
+  position: absolute;
+  top: 43px;
+  left: 115px;
+  font-family: "Barlow Condensed", Helvetica;
+  font-weight: 300;
+  color: #fdfdfd;
+  font-size: 40px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.view-all {
+  position: absolute;
+  width: 120px;
+  height: 58px;
+  top: 47px;
+  left: 1534px;
+  background-color: #1f1f1f;
+  overflow: hidden;
+}
+
+.view-all::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 23px;
+  width: 0;
+  height: 1px;
+  background-color: #fdfdfd;
+  border-radius: 2px;
+  transition: width 0.3s ease-out;
+}
+
+.view-all:hover::after {
+  width: 65%;
+}
+
+.view-all-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: "Barlow Condensed", Helvetica;
+  font-weight: 300;
+  color: #ffffff;
+  font-size: 25px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.gable:hover,
+.brooke:hover,
+.gable-friends:hover {
+  filter: grayscale(100%);
+  transition: filter 0.3s ease-out;
+}
+
+.gable::before {
+  content: attr(data-text);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "SF Pro-Medium", Helvetica;
+  font-size: 50px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.75);
+  opacity: 0;
+  transition: opacity 0.3s ease-out;
+  z-index: 1;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.gable,
+.brooke {
+  position: relative;
+}
+
+.gable::before,
+.gable-friends::before {
+  width: 290px;
+}
+
+.brooke::before {
+  width: 300px;
+}
+
+.gable:hover::before {
+  opacity: 1;
+}
+
+.gable-friends::before {
+  content: attr(data-text);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "SF Pro-Medium", Helvetica;
+  font-size: 50px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.75);
+  opacity: 0;
+  transition: opacity 0.3s ease-out;
+  z-index: 1;
+  text-align: center;
+  white-space: pre-line;
+}
+
+.gable-friends:hover::before {
+  opacity: 1;
+}
+
+.brooke::before {
+  content: "Brooke Ligertwood";
+  position: absolute;
+  top: 50%;
+  left: 70px;
+  transform: translateY(-50%);
+  font-family: "SF Pro-Medium", Helvetica;
+  font-size: 50px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.85);
+  opacity: 0;
+  transition: opacity 0.3s ease-out;
+  z-index: 1;
+  text-align: center;
+}
+
+.brooke:hover::before {
+  opacity: 1;
+}
+
+.brooke {
+  position: absolute;
+  width: 476px;
+  height: 400px;
+  top: 104px;
+  left: 1151px;
+  background-image: url(Brooke-Ligertwood.png);
+  background-size: 100% 100%;
+}
+
+.gable {
+  position: absolute;
+  width: 476px;
+  height: 400px;
+  top: 104px;
+  left: 115px;
+  background-image: url(Gable-Price.png);
+  background-size: 100% 100%;
+}
+
+.gable-friends {
+  position: absolute;
+  width: 476px;
+  height: 400px;
+  top: 104px;
+  left: 633px;
+  background-image: url(Gable-Friends.png);
+  background-size: 100% 100%;
+}
+
+/*makes the gale and friends picture darker*/
+.darken {
+  height: 400px;
+  background-color: #0000001a;
+  border-radius: 15px;
+}
+
+/* events section */
+.stage {
+  position: absolute;
+  width: 1538px;
+  height: 669px;
+  top: 50px;
+  left: 0;
+}
+
+.p {
+  position: absolute;
+  width: 551px;
+  top: 98px;
+  left: 74px;
+  font-family: "Barlow Condensed", Helvetica;
+  font-weight: 400;
+  color: #dddddd;
+  font-size: 110px;
+  letter-spacing: 0;
+  line-height: 99px;
+}
+
+.red-show{
+  position: absolute;
+  width: 685px;
+  height: 729px;
+  top: 0;
+  left: 853px;
+}
+
+.fisheye {
+  position: absolute;
+  width: 259px;
+  height: 259px;
+  top: 72px;
+  left: 731px;
+}
+
+/* view events button */
+.view-events {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 320px;
+  left: 118px;
+  z-index: 2;
+}
+
+.events-button{
+  position: absolute;
+  width: 1538px;
+  height: 729px;
+  top: 1278px;
+  left: 115px;
+}
+
+.button {
+  display: flex;
+  flex-direction: column;
+  width: 164px;
+  align-items: center;
+  gap: 10px;
+  padding: 15px 60px;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  border-radius: 48px;
+  border: 1.5px solid;
+  border-color: #e0e0e0;
+  all: unset;
+  box-sizing: border-box;
+}
+
+.button-text {
+  position: relative;
+  z-index: 2;
+  width: fit-content;
+  font-family: "SF Pro-Medium", Helvetica;
+  font-weight: 500;
+  color: #e2e2e2;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 18px;
+  white-space: nowrap;
+}
+
+.button-text::before {
+  content: '';
+  position: absolute;
+  width: calc(100% + 70px);
+  height: calc(100% + 30px);
+  box-sizing: border-box;
+  border: 1.7px solid #dddddd;
+  top: -15px;
+  left: -36px;
+  border-radius: 35px;
+  z-index: -1;
+}
+
+.button:hover {
+  background-color: #e2e2e2;
+}
+
+.button-text:hover {
+  color: #960C0F;
+}
+
+.button-text:hover::before {
+  background-color: #e2e2e2;
+}
+
+/* footer section */
+.footer {
+  width: 1728px;
+  height: 247px;
+  top: 2063px;
+  background-color: #0a0a0a;
+  box-shadow: 0px 4px 4px #00000040;
+  position: absolute;
+  left: 0;
+}
+
+.footer-logo {
+  position: absolute;
+  width: 474px;
+  height: 69px;
+  top: 51px;
+  left: 115px;
+}
+
+.facebook {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 143px;
+  left: 125px;
+}
+
+.insta {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 146px;
+  left: 217px;
+}
+
+.email {
+  position: absolute;
+  width: 43px;
+  height: 43px;
+  top: 147px;
+  left: 309px;
+}
+
+.footer-text {
+  position: absolute;
+  top: 0;
+  left: 2px;
+  font-family: "SF Pro-Regular", Helvetica;
+  font-weight: 400;
+  color: #dddddd;
+  font-size: 23px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.footer-contact {
+  width: 86px;
+  top: 88px;
+  left: 1260px;
+  position: absolute;
+  height: 30px;
+  background-color: #0a0a0a;
+}
+
+.footer-partners {
+  width: 88px;
+  top: 135px;
+  left: 1261px;
+  position: absolute;
+  height: 30px;
+  background-color: #0a0a0a;
+}
+
+.footer-privacy {
+  position: absolute;
+  width: 143px;
+  height: 30px;
+  top: 87px;
+  left: 1424px;
+  background-color: #0a0a0a;
+}
+
+.footer-terms-of-use {
+  position: absolute;
+  width: 136px;
+  height: 30px;
+  top: 135px;
+  left: 1424px;
+  background-color: #0a0a0a;
+}
